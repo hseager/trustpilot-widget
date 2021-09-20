@@ -1,8 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: Arial;
+/* Would use the same fonts as used on website */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #212529;
+    background: #efefef;
+}
+
+.trustpilot-widget {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 4px 4px 10px #d5d5d5;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.trustpilot-widget-heading {
+    margin: 0 0 20px;
+}
+
+.trustpilot-widget-quote {
+    margin: 0 0 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.trustpilot-widget-text{
+    color:#6c757d;
+    margin: 0 0 10px;
+}
+
+.trustpilot-widget-text strong{
+    color: #212529;
+}
+
+.trustpilot-widget-logo{
+    width: 120px;
+}
+
+/* Created for mobiles first */
+@media (min-width: 480px) { 
+    .trustpilot-widget{
+        text-align: left;
+    }
+
+    .trustpilot-widget-text{
+        margin: 0;
+    }
+
+    .trustpilot-widget-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
